@@ -14,13 +14,10 @@
                 <div header-dctv="">
                 <header class="main">
                     <a href="index.html">
-                        <!--
-                        <img src="https://cdn.mooji.org/wp-content/themes/moojiorg/img/logo2.png" srcset="https://cdn.mooji.org/wp-content/themes/moojiorg/img/logo2.png 1x, https://cdn.mooji.org/wp-content/themes/moojiorg/img/logo2@2x.png 2x" alt="Mooji" title="Mooji">
-                        -->
                         <img srcset="pictures/homeEvolution.png 1x, pictures/homeEvolution2x.png 2x" alt="HomeOfEvolution" title="Home of Evolution">
                     </a>
                     <div class="section-container">
-                        <button>
+                        <button onclick="toggleMenu()">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -190,117 +187,62 @@
     
                     <nav class="mobile-menu-modules">
                         <ul>
-                                                    <li class="rose">
-                            <a onclick="toggleDropmenu(event); return false;" href=""><span class="ng-binding">About</span></a>
+                            <li class="lily">
+                                <a onclick="toggleDropmenu(event); return false;" href=""><span class="ng-binding">Бібліотека</span></a>
                                 <ul>
-                                                                    <li>
-                                        <a href="/salutations-to-all-masters">Salutations</a>
+                                    <li>
+                                        <a href="indev.html">Книги</a>
                                     </li>
-                                                                    <li>
-                                        <a href="/mooji">Mooji</a>
+                                    <li>
+                                        <a href="indev.html">Світлини</a>
                                     </li>
-                                                                    <li>
-                                        <a href="https://mooji.org/satsang">Satsang</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://mooji.org/monte-sahaja">Monte Sahaja</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/voices-from-satsang">Voices from Satsang</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/news">News</a>
-                                    </li>
-                                                                </ul>
+                                </ul>
                             </li>
-                                                    <li class="fire">
-                            <a onclick="toggleDropmenu(event); return false;" href="https://mooji.tv" target="blank"><span class="ng-binding">Mooji TV</span></a>
-                                <ul>
-                                                                    <li>
-                                        <a href="https://mooji.tv/freemedia/" target="blank">Browse All</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://mooji.tv/subscription/" target="blank">Sahaja Express</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://mooji.tv/online-retreat/" target="blank">Online Retreats</a>
-                                    </li>
-                                                                </ul>
-                            </li>
-                                                    <li class="lily">
-                            <a onclick="toggleDropmenu(event); return false;" href=""><span class="ng-binding">The Library</span></a>
-                                <ul>
-                                                                    <li>
-                                        <a href="/books">Books</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/music">Music</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="http://photos.mooji.org/" target="blank">Photos</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://mooji.org/archive">Archive</a>
-                                    </li>
-                                                                </ul>
-                            </li>
-                                                    <li class="mist">
-                            <a onclick="toggleDropmenu(event); return false;" href="/events"><span class="ng-binding">Schedule</span></a>
-                                <ul>
-                                                                    <li>
-                                        <a href="/events">Satsang</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/events#music">Music</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/events#monte-sahaja">Monte Sahaja</a>
-                                    </li>
-                                                                </ul>
-                            </li>
-                                                    <li class="bone">
-                            <a onclick="toggleDropmenu(event); return false;" href=""><span class="ng-binding">Get Involved</span></a>
-                                <ul>
-                                                                    <li>
-                                        <a href="https://mooji.org/sangha-groups">Sangha Groups</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/subscribe">Subscribe</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/donate?tcode=morg3">Donate</a>
-                                    </li>
-                                                                </ul>
-                            </li>
-                                                    <li class="moon">
-                            <a onclick="toggleDropmenu(event); return false;" href="https://shop.mooji.org?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank"><span class="ng-binding">Sangha Shop</span></a>
-                                <ul>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Browse All</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/category/satsang/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Satsang</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/category/books/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Books</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/category/music/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Music</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/category/photos-art/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Photos &amp; Art</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/category/malas/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Malas</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="https://shop.mooji.org/category/sangha-life/?utm_medium=referral&amp;utm_source=mooji.org&amp;utm_content=menu" target="blank">Sangha Life</a>
-                                    </li>
-                                                                </ul>
-                            </li>
-                                                    <li class="bone">
-                                <a href="/donate?tcode=morg1" onclick="gtag('event', 'Click to Donate Page',{'event_category': 'Donate', 'event_label': 'Donate page from Mooji - Official Site', 'value': '0'})">Donate</a>
+                            <li class="mist">
+                                <a href="indev.html">Розклад</a>
                                 <ul></ul>
+                            </li>
+                            <li class="bone">
+                                <a onclick="toggleDropmenu(event); return false;" href=""><span class="ng-binding">Приєднатися</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="indev.html">Групи</a>
+                                    </li>
+                                    <li>
+                                        <a href="indev.html">Підписатися</a>
+                                    </li>
+                                    <li>
+                                        <a href="indev.html">Донат</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="moon">
+                                <a onclick="toggleDropmenu(event); return false;" href="" target="blank"><span class="ng-binding">Магазин</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="indev.html" target="blank">Browse All</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="rose">
+                                <a onclick="toggleDropmenu(event); return false;" href=""><span class="ng-binding">Про нас</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="indev.html">Charity Evolution</a>
+                                    </li>
+                                    <li>
+                                        <a href="indev.html">Choice Evolution</a>
+                                    </li>
+                                    <li>
+                                        <a href="indev.html">Key for Freedom</a>
+                                    </li>
+                                    <li>
+                                        <a href="indev.html">Communication Evolution</a>
+                                    </li>
+                                    <li>
+                                        <a href="indev.html">Camp Evolution</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -1104,6 +1046,32 @@
     </g>
     </svg>
         </section>
+        <!--
+        <section class="slider-module no-background news" latest-news-dctv="">
+            <div class="section-container">
+                <div class="owl-stage-outer">
+                    <img src="pictures/photo.jpg" alt="Text">
+                </div>
+            </div>
+        </section>-->
+        <section class="home-info2-module" home-info2-dctv="">
+            <div class="section-container">
+                <article style="margin-left: 25%;">
+                    <dl>
+                        <dt>
+                            <img src="pictures/iconHuman.png" alt="" title="">
+                        </dt>
+                        <dt>
+                            <img src="pictures/iconHouse.png" alt="" title="">
+                        </dt>
+                        <dt>
+                            <img src="pictures/iconPlanet.png" alt="" title="">
+                        </dt>
+                    </dl>
+                    
+                </article>
+            </div>
+        </section>
         <!--Про проєкт-->
         <section class="home-info-module ng-scope" home-info-dctv="">
             <svg viewBox="0 0 16000 310" preserveAspectRatio="none">
@@ -1184,8 +1152,8 @@
                 <section>
                     <article>
                         <div class="content" style="width: 500px;">
-                            <h3><a href="indev.html" target="_self">Хто ми такі?</a></h3>
-                            <p>
+                            <h3><a href="indev.html" target="_self">Хто ми?</a></h3>
+                            <p style="color: #676767;">
                                 Головна мета ГО “Дім Еволюції” - сприяння розвитку культорологічної самосвідомості та естетичної грамотності людини, зміцнення її морального, душевного та духовного здоров’я, формування здорового способу життя. Серед напрямків діяльності - популяризація і поширення наукових знань з питань вивчення іноземних мов та інших навчальних предметів, створення можливостей для всебічного розвитку людей, котрі мають за мету бути щасливими і, як результат, здоровими та успішними, а також піклуватись про навколишнє середовище планети Земля.
                             </p>
                         </div>
@@ -1534,17 +1502,26 @@
                 <div class="section-container">
                    
                     <section class="socials">
-                        <header>
+                        <header style="margin-left: 50px; margin-bottom: 10px;">
                             <h4>Підписуйся</h4>
                         </header>
-                        <div class="content">
-                            <p><a href="https://www.youtube.com/" style="color: black">На наш Youtube канал.</a></p>
-                        </div>
+                        <ul id="socials">
+							<li class="facebook">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <img src="pictures/socialNetworks/facebookLogo.png" alt="Facebook"></a>
+                            </li>
+                            <li class="youtube">
+                                <a href="https://youtube.com" target="_blank">
+                                    <img src="pictures/socialNetworks/youtubeLogo.png" alt="Youtube"></a>
+                            </li>
+                            <li class="instagram">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <img src="pictures/socialNetworks/instagramLogo.png" alt="Instagram"></a>
+                            </li>
+                        </ul>
                     </section>
                 </div>
             </div>
-    
-            
         </footer>
     </div>
     </div>
