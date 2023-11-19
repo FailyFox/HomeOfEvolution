@@ -120,24 +120,6 @@ $(document).ready(function() {
         goToUrl($('div.select select').val());
     });
 
-    /* allow cookies popup */
-    if (Cookies.get('cookiesAlert') != '1') {
-        $("div[footer-dctv]").prepend("<section class='cookies-module'>" +
-        "<div class='section-container wider'>" +
-            "<header>" +
-            	"<h3>Cookies on Mooji.org</h3>" +
-            	"<button onclick='closeCookieAlert(event);'>Close</button>" +
-        	"</header>" +
-        	"<div class='content'>" +
-            	"<p>If you continue to browse this website, you agree to our use of cookies. These cookies do not include the placement of any advertisement, but allow us to give you the best possible browsing experience here on Mooji.org.</p>" +
-			"</div></div></section>");
-    }
-    $('figure').each(function() {
-        if ($(this).width()<$(this).height()) {
-            $(this).addClass("portrait");
-        }
-    });
-
     var theme = $("html").attr("data-theme");
     if (theme!=undefined && theme!='') {
         if (theme=='bone') theme = "moon"; //exception for donate page
