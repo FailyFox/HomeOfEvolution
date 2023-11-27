@@ -9688,7 +9688,6 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 
 @media all and (max-width: 880px) {
 	section.home-info-module>div {
-		-ms-flex-align: center;
 		align-items: center
 	}
 	section.home-info-module>div>section {
@@ -9696,7 +9695,6 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 	}
 	section.home-info-module>div>section article figure {
 		height: 250px;
-		display: -ms-flexbox;
 		display: flex;
 		-ms-flex-direction: column;
 		flex-direction: column;
@@ -9752,7 +9750,6 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 		transform: translateX(-30px)
 	}
 	section.home-info-module>div>section:last-child {
-		-ms-flex-preferred-size: 50%;
 		flex-basis: 50%;
 		width: 100%;
 		padding-left: 35px
@@ -9763,11 +9760,7 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 }
 
 @media all and (max-width: 767px) {
-	section.home-info-module {
-		background: none
-	}
 	section.home-info-module>div {
-		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 0
 	}
@@ -9778,14 +9771,30 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 	}
 	section.home-info-module>div>section:first-child {
 		padding: 70px 20px 30px 20px;
-		-ms-flex-preferred-size: auto;
 		flex-basis: auto;
 		display: block
 	}
 	section.home-info-module>div>section:last-child {
-		padding: 30px 20px 70px 20px;
-		-ms-flex-preferred-size: auto;
+		padding: 70px 20px 70px 20px;
 		flex-basis: auto
+	}
+}
+
+@media all and (max-width: 1024px) {
+	section.home-info-carousel>div {
+		margin-left: 10%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	section.home-info-carousel>div {
+		margin-left: -50px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	section.home-info-carousel>div {
+		margin-left: -70px;
 	}
 }
 
@@ -10229,6 +10238,50 @@ section.home-slider-module section.slide-item .section-container article>footer 
 	top: 50%;
 	transform: translateY(-1px);
 	right: 25px
+}
+
+.harmony-button {
+	padding-left: 120px !important;
+	padding-right: 30px !important;
+}
+
+.flower-button {
+	margin-left: 50px;
+}
+
+.charity-button {
+	margin-left: 70px;
+	margin-right: -20px;
+}
+
+@media all and (max-width: 1200px) {
+	section.button-info-module > div > section:first-child {
+		flex-basis: 100%;
+		justify-content: center;
+		padding-right: 0;
+	}
+	
+	section.button-info-module > div > section {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	section.button-info-module > div > section article {
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	
+	section.button-info-module > div > section article.english-article {
+		margin-left: 50px;
+	}
+	
+	section.button-info-module > div > section article.flower-article {
+		margin-left: 20px;
+	}
+	
+	section.button-info-module > div > section article.charity-article {
+		margin-left: -25px;
+	}
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
@@ -15955,25 +16008,12 @@ section.button-info-module {
     overflow: hidden;
 }
 
-section.button-info-module > div {
-    display: -ms-flexbox;
-    display: flex;
-}
-
 section.button-info-module > div > section:first-child {
     background: white;
-    -ms-flex-preferred-size: calc(100% - 320px);
     flex-basis: calc(100% - 320px);
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-right: 50px;
-}
-
-section.button-info-module > div > section:last-child {
-    background: white;
-    padding-left: 50px;
 }
 
 section.button-info-module > div > section {
@@ -15984,15 +16024,12 @@ section.button-info-module > div > section {
 }
 
 section.button-info-module > div > section:first-child article {
-    -ms-flex-direction: row;
     flex-direction: row;
 }
 
 section.button-info-module > div > section article {
     height: 100%;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -16025,4 +16062,23 @@ section.button-info-module > div > section:last-child article footer a svg {
 section.button-info-module > div > section:last-child article footer a svg > g {
     fill: #99bdba;
 	opacity: 0.4;
+}
+
+.pict-under-button {
+	margin-left: 20px;
+}
+
+.make-your-choise-text {
+	font-family: inherit;
+	color: inherit;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+.make-your-choise-text:hover {
+	color: #000;
+	text-decoration: none;
 }
