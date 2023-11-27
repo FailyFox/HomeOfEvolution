@@ -5386,8 +5386,8 @@ footer.main>div:nth-child(1):before {
 footer.main>div:nth-child(1)>div {
 	padding-top: 38px;
 	padding-bottom: 38px;
-	display: -ms-flexbox;
-	display: flex
+	display: flex;
+	justify-content: center;
 }
 
 footer.main>div:nth-child(1)>div:before {
@@ -5417,17 +5417,22 @@ footer.main>div:nth-child(1)>div section {
 	z-index: 1
 }
 
+footer.main>div:nth-child(1)>div section>header {
+	margin-bottom: 10px;
+}
+
+footer.main>div:nth-child(1)>div section>ul {
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+}
+
 footer.main>div:nth-child(1)>div section.connect {
 	margin-right: auto
 }
 
 footer.main>div:nth-child(1)>div section.connect a, footer.main>div:nth-child(1)>div section.languages a {
 	color: black;
-}
-
-footer.main>div:nth-child(1)>div section.socials {
-	margin-left: 100px;
-	max-width: 230px
 }
 
 footer.main>div:nth-child(1)>div section.newsletter {
@@ -5440,7 +5445,7 @@ footer.main>div:nth-child(1)>div section header h4 {
 	margin: 0;
 	font-family: "futura-pt";
 	font-weight: 700;
-	font-size: 17px
+	font-size: 20px
 }
 
 footer.main>div:nth-child(1)>div section header+.content {
@@ -5601,15 +5606,9 @@ footer.main>div:nth-child(2)>div nav ul li a {
 	footer.main>div:nth-child(1)>div>section.newsletter {
 		margin-left: 30px
 	}
-	footer.main>div:nth-child(1)>div>section.socials {
-		margin-left: 100px;
-	}
+	
 }
-@media all and (max-width: 1024px) and (min-width: 769px) {
-	footer.main>div:nth-child(1)>div>section.socials {
-		margin-left: 60px;
-	}
-}
+
 @media all and (max-width: 768px) and (min-width: 768px) {
 	footer.main>div:nth-child(1)>div>section.socials {
 		margin-left: 40px;
@@ -5618,24 +5617,6 @@ footer.main>div:nth-child(2)>div nav ul li a {
 
 
 @media all and (max-width: 767px) {
-	footer.main>div:nth-child(1)>div {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-ms-flex-pack: justify;
-		justify-content: space-between
-	}
-	footer.main>div:nth-child(1)>div>section {
-		-ms-flex-preferred-size: calc(50% - 10px);
-		flex-basis: calc(50% - 10px);
-		margin-left: 0
-	}
-	footer.main>div:nth-child(1)>div>section.socials, 	footer.main>div:nth-child(1)>div>section.newsletter {
-		max-width: 100%;
-		margin-left: 0;
-		margin-top: 30px;
-		-ms-flex-preferred-size: calc(50% - 10px);
-		flex-basis: calc(50% - 10px)
-	}
 	footer.main>div:nth-child(2)>div {
 		-ms-flex-direction: column;
 		flex-direction: column;
@@ -5665,10 +5646,6 @@ footer.main>div:nth-child(2)>div nav ul li a {
 }
 
 @media all and (max-width: 533px) {
-	footer.main>div:nth-child(1)>div {
-		-ms-flex-direction: column;
-		flex-direction: column
-	}
 	footer.main>div:nth-child(1)>div>section {
 		-ms-flex-preferred-size: auto;
 		flex-basis: auto;
