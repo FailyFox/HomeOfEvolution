@@ -522,3 +522,19 @@ qp = function (name, url = window.location.href) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var fabContainer = document.querySelector(".fab-container");
+    var targetSection = document.querySelector(".home-info-carousel");
+
+    window.addEventListener("scroll", function() {
+        var distanceToTarget = targetSection.getBoundingClientRect().top;
+        var threshold = 100;
+
+        if (distanceToTarget < threshold) {
+            fabContainer.classList.add("show");
+        } else {
+            fabContainer.classList.remove("show");
+        }
+    });
+});
