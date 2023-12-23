@@ -524,17 +524,33 @@ qp = function (name, url = window.location.href) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    let scrolled = false;
     var fabContainer = document.querySelector(".fab-container");
     var targetSection = document.querySelector(".home-info-carousel");
+    var fabHeart = document.querySelector(".heart");
 
+    fabHeart.classList.remove("active");
+    
     window.addEventListener("scroll", function() {
         var distanceToTarget = targetSection.getBoundingClientRect().top;
         var threshold = 100;
 
         if (distanceToTarget < threshold) {
             fabContainer.classList.add("show");
+            fabHeart.classList.add("show");
+
+            if (!scrolled) {
+                scrolled = true;
+                fabHeart.classList.add("active");
+    
+                setTimeout(() => {
+                    fabHeart.classList.remove("active");
+                    scrolled = false;
+                }, 5000);
+            }
         } else {
             fabContainer.classList.remove("show");
+            fabHeart.classList.remove("show");
         }
     });
 });

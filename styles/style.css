@@ -16062,14 +16062,9 @@ section.button-info-module > div > section:last-child article footer a svg > g {
 	right: 50px;
 	z-index: 999;
 	cursor: pointer;
-	display: none;
+	display: block;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
-}
-
-.fab-container.show {
-	display: block;
-	opacity: 1;
 }
 
 .fab-icon-holder {
@@ -16089,4 +16084,54 @@ section.button-info-module > div > section:last-child article footer a svg > g {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+}
+
+.heart,
+.heart::after,
+.heart::before {
+	background: url("../pictures/red-heart-icon.png");
+	display: block;
+	opacity: 0;
+	content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 25%;
+    width: 20px;
+    height: 19px;
+    z-index: -1;
+}
+.heart::before {
+	bottom: 10px;
+	right: 10px;
+}
+.heart::after {
+	bottom: 3px;
+	left: 10px;
+}
+
+.heart.show,
+.heart.show::after,
+.heart.show::before,
+.fab-container.show {
+	opacity: 1;
+}
+
+.heart.active,
+.heart.active::after,
+.heart.active::before {
+	animation: exitAnimation 5s forwards;
+}
+.heart.active::before {
+	animation-duration: 3s;
+}
+
+@keyframes exitAnimation {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
 }
