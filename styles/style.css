@@ -9654,6 +9654,12 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 	fill: #99bdba
 }
 
+@media all and (max-width: 982px) {
+	.our-videos-section {
+		justify-content: center !important;
+	}
+}
+
 @media all and (max-width: 880px) {
 	section.home-info-module>div>section {
 		padding: 70px 0
@@ -9728,7 +9734,6 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 	section.home-info-module>div>section:last-child {
 		padding: 70px 0px 70px 20px;
 		flex-basis: auto;
-		width: 500px;
 		max-width: 350px;
 	}
 }
@@ -9737,7 +9742,6 @@ section.home-info-module>div>section:last-child article footer a svg>g {
 	section.home-info-carousel>div {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 	}
 }
 
@@ -9869,24 +9873,6 @@ section.home-info2-module>div article>footer a {
 	display: inline-block;
 	transform: translateX(-50px);
 	white-space: nowrap
-}
-
-section.home-info2-module>div article>footer a:after {
-	content: '';
-	position: absolute;
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -215px -21px;
-	width: 19px;
-	height: 8px;
-	top: 50%;
-	transform: translateY(-1px);
-	right: 25px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.home-info2-module>div article>footer a:after {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -215px -21px;
-		background-size: 500px 500px
-	}
 }
 
 section.home-info2-module>div article>footer a svg {
@@ -10625,22 +10611,6 @@ section.hub-intro-module>div article>header h1 {
 	margin: 0
 }
 
-section.hub-intro-module>div article>header h1:before {
-	content: '';
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -373px -256px;
-	width: 54px;
-	height: 38px;
-	display: block;
-	margin: 0 auto 15px auto
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.hub-intro-module>div article>header h1:before {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -373px -256px;
-		background-size: 500px 500px
-	}
-}
-
 section.hub-intro-module>div article>header h1+p {
 	margin-top: 10px
 }
@@ -10726,24 +10696,6 @@ section.hub-intro-module>div article>footer a {
 	transform: translateX(-50px);
 	white-space: nowrap;
 	transform: translateX(-15%)
-}
-
-section.hub-intro-module>div article>footer a:after {
-	content: '';
-	position: absolute;
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -215px -21px;
-	width: 19px;
-	height: 8px;
-	top: 50%;
-	transform: translateY(-1px);
-	right: 25px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.hub-intro-module>div article>footer a:after {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -215px -21px;
-		background-size: 500px 500px
-	}
 }
 
 section.hub-intro-module>div article>footer a svg {
@@ -11073,24 +11025,6 @@ section.hub-text-module>div article footer a {
 	display: inline-block;
 	transform: translateX(-50px);
 	white-space: nowrap
-}
-
-section.hub-text-module>div article footer a:after {
-	content: '';
-	position: absolute;
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -215px -21px;
-	width: 19px;
-	height: 8px;
-	top: 50%;
-	transform: translateY(-1px);
-	right: 25px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.hub-text-module>div article footer a:after {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -215px -21px;
-		background-size: 500px 500px
-	}
 }
 
 section.hub-text-module>div article footer a svg {
@@ -11558,25 +11492,6 @@ section.ways-to-join-module>div>article>footer a.register span:hover, section.on
 	opacity: .8
 }
 
-section.ways-to-join-module>div>article>footer a.register span:after, section.one-column-module>div>article>.content a.register span:after {
-	content: '';
-	position: absolute;
-	display: block;
-	top: 50%;
-	transform: translateY(-50%) rotate(-90deg);
-	right: 21px;
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -121px -22px;
-	width: 8px;
-	height: 7px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.ways-to-join-module>div>article>footer a.register span:after, 	section.one-column-module>div>article>.content a.register span:after {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -121px -22px;
-		background-size: 500px 500px
-	}
-}
-
 section.ways-to-join-module>div>article>footer .text-center, section.one-column-module>div>article>.content .text-center {
 	text-align: center
 }
@@ -11771,189 +11686,6 @@ html.mobile:not(.firefox) section.share-buttons-module>div ul li.sms, html.table
 
 html.mobile.android.chrome section.share-buttons-module>div ul li.share, html.tablet.android.chrome section.share-buttons-module>div ul li.share {
 	display: block
-}
-
-section.share-buttons-module>div ul li.facebook a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -101px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.facebook a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -101px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.twitter a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -151px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.twitter a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -151px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.message {
-	display: none
-}
-
-section.share-buttons-module>div ul li.message a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -201px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.message a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -201px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.whatsapp {
-	display: none
-}
-
-section.share-buttons-module>div ul li.whatsapp a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -251px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.whatsapp a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -251px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.sms {
-	display: none
-}
-
-section.share-buttons-module>div ul li.sms a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -401px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.sms a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -401px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.email a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -301px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.email a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -301px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.copylink {
-	position: relative
-}
-
-section.share-buttons-module>div ul li.copylink a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -351px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.copylink a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -351px -151px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.copylink>span {
-	background: #7e9491;
-	text-transform: uppercase;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: 17px 25px;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%) translateY(calc(-100% - 16px));
-	font-size: 13px;
-	letter-spacing: 0.05em;
-	font-weight: 400;
-	white-space: nowrap;
-	font-family: "futura-pt";
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
-}
-
-section.share-buttons-module>div ul li.copylink>span:after {
-	content: '';
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -16px -368px;
-	width: 18px;
-	height: 14px;
-	display: inline-block;
-	margin-left: 14px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.copylink>span:after {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -16px -368px;
-		background-size: 500px 500px
-	}
-}
-
-section.share-buttons-module>div ul li.copylink>span:before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%) translateY(100%);
-	border-width: 7px 5px 7px 5px;
-	border-style: solid;
-	border-color: #7e9491 transparent transparent transparent
-}
-
-section.share-buttons-module>div ul li.copylink>span.ng-enter, section.share-buttons-module>div ul li.copylink>span.ng-leave {
-	transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s
-}
-
-section.share-buttons-module>div ul li.copylink>span.ng-enter, section.share-buttons-module>div ul li.copylink>span.ng-leave.ng-leave-active {
-	opacity: 0
-}
-
-section.share-buttons-module>div ul li.copylink>span.ng-leave, section.share-buttons-module>div ul li.copylink>span.ng-enter.ng-enter-active {
-	opacity: 1
-}
-
-section.share-buttons-module>div ul li.share {
-	display: none
-}
-
-section.share-buttons-module>div ul li.share a {
-	background: transparent url("/wp-content/themes/moojiorg/img/sprite.png?v=1") no-repeat -451px -151px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
-	section.share-buttons-module>div ul li.share a {
-		background: transparent url("/wp-content/themes/moojiorg/img/sprite@2x.png?v=1") no-repeat -451px -151px;
-		background-size: 500px 500px
-	}
-}
-
-@media all and (max-width: 1024px) {
-	section.share-buttons-module {
-		padding: 60px 0
-	}
-	section.share-buttons-module>div {
-		padding-top: 0
-	}
-}
-
-@media all and (max-width: 767px) {
-	section.share-buttons-module>div {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap
-	}
 }
 
 section.slider-module {
@@ -16134,4 +15866,20 @@ section.button-info-module > div > section:last-child article footer a svg > g {
 		transform: translateY(-100px);
 		opacity: 0;
 	}
+}
+
+.embed-container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
